@@ -110,7 +110,7 @@ html { overflow-y: scroll; }
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
 
-a, a:active, a:visited { color: #607890; = }
+a, a:active, a:visited { color: #607890; }
 a:hover { color: #036; }
 
 
@@ -170,8 +170,8 @@ input:invalid, textarea:invalid {
 /* These selection declarations have to be separate.
    No text-shadow: twitter.com/miketaylr/status/12228805301 
    Also: hot pink. */
-/*::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; } */
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
 
 /*  j.mp/webkit-tap-highlight-color */
 a:link { -webkit-tap-highlight-color: #FF5E99; } 
@@ -183,6 +183,8 @@ button {  width: auto; overflow: visible; }
 /* bicubic resizing for non-native sized IMG: 
    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
 .ie7 img { -ms-interpolation-mode: bicubic; }
+
+
 
 /* 
  * Non-semantic helper classes 
@@ -213,77 +215,41 @@ button {  width: auto; overflow: visible; }
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
 .clearfix { zoom: 1; }
 
+
+
+
+
+
  /* Primary Styles
-    Author: Arnold Guerrero
+    Author: 
  */
 
-body {
-	background-image: url(../images/bgStripe2.jpg);
-	background-repeat: repeat-x;
-	background-color:#696969;
-	font-family: Arial, Helvetica, sans-serif;
-}
+
+
+
+/*Removed from html*/
 
 h1 { 
-	font-size: 20px
-}
-
-a:link {
-	color: #050102;
-}
-
-a:visited {
-	color: #050102;
-}
-
-a:hover {
-	color: #d10722;
-}
-
-a:active {
-	text-decoration: none;
-	color: #E00523;
-}
-
-p {
-	display: block;
-	margin: 1em 0px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
-	line-height: 18px;
-}
-
-.callOut {
-	font-style: italic;
-	color: #333;
-	font-weight: bold;
-}
-
-hr {
-	background-color: #d10722;
-	height: 2px;
-	margin: 4px 0px;
-}
+	font-size: 20px;
+	}
 
 #bigCopy_ {
-	background-image: url(../images/bigCopy2.jpg);
-	background-repeat: repeat-y;
-	height: 606px;
-	left: 0px;
-	position: absolute;
-	top: 199px;
-	width: 960px;
+background-image: url(../images/bigCopy2.jpg);
+background-repeat: repeat-y;
+height: 606px;
+left: 0px;
+position: absolute;
+top: 199px;
+width: 960px;
 }
-
 #bigCopy_2{
-/*	height: 606px;*/
-	height: 800px;
-	left: 0px;
-	position: absolute;
-	top: 199px;
-	width: 960px;
-	background: url(../images/bigCopy4.jpg) repeat-y;
-}
+    height: 606px;
+    left: 0px;
+    position: absolute;
+    top: 199px;
+    width: 960px;
+	background-image: url(../images/bigCopy4.jpg);
+	}
 
 #bigCopy_middle { 
 	background-image: url(../images/bigCopy2.jpg);
@@ -293,7 +259,7 @@ hr {
 	position: absolute;
 	top: 199px;
 	width: 960px;
-}
+	}
 
 #bigCopy_long { 
 	background-image: url(../images/bigCopy2.jpg);
@@ -303,7 +269,7 @@ hr {
 	position: absolute;
 	top: 199px;
 	width: 960px;
-}
+	}
 
 #Table_01 {
 	position:absolute;
@@ -330,15 +296,6 @@ hr {
 	width:645px;
 	height:126px;
 	background-image: url(../images/header.jpg);
-}
-
-#header_rescue {
-	position: absolute;
-	left:315px;
-	top:0px;
-	width:645px;
-	height:126px;
-	background-image: url(../rescue/images/header.jpg);
 }
 
 #menu_ {
@@ -390,32 +347,33 @@ hr {
 }
 
 #copy_index2 { 
-	height: 806px;
-	left: 137px;
-	position: absolute;
-	top: 199px;
-	width: 739px;
+    height: 606px;
+    left: 137px;
+    position: absolute;
+    top: 199px;
+    width: 739px;
 	z-index:100;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 17px;
-}
+	}
 
 #pic1_ {
 	position:absolute;
 	left:479px;
 	top:385px;
 	z-index:100;  
+	
 }   
 
 .imagePad2 { 
 	margin: 0px 10px 10px 0px;  
 	float:left;
-}
-
+	}
+	
 .imagePad { 
 	margin: 0px 0px 10px 10px;  
 	float:right;
-}
+	}
 
 #rightCopy_ {
 	position:absolute;
@@ -446,10 +404,10 @@ hr {
 
 #copy2_ {
 	position:absolute;
-	left: 137px;
-	top: 377px;
-	width: 336px;
-	height: 99px;
+	left:137px;
+	top:377px;
+	width:336px;
+	height:99px;
 	background-image: url(../images/copy2.jpg);
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
@@ -501,15 +459,6 @@ hr {
 	background-image: url(../images/foot2.jpg);
 }
 
-#foot_home {
-	position:absolute;
-	left:0px;
-	top:1005px;
-	width:960px;
-	height:195px;
-/*	background-image: url(../images/foot2.jpg);*/
-}
-
 #foot_2 {
 	position:absolute;
 	left:0px;
@@ -529,29 +478,27 @@ hr {
 }
 
 #foot_4 {
-	background-image: url(../images/foot3.jpg);
-	height: 195px;
-	left: 0px;
-	position: absolute;
-	top: 2605px;
-	width: 960px;
+background-image: url(../images/foot3.jpg);
+height: 195px;
+left: 0px;
+position: absolute;
+top: 2605px;
+width: 960px;
 }
-
-/*#fullFooter { 
-	float: left;
-	height: 189px;
-	display: block;
-	width: 100%;
-	position: relative;
-	bottom: 0px;
-	background-image: url(../images/footer-full-stripe.jpg);
-}*/
 
 #index { 
-	background-image: url(../images/bgStripe-1200.jpg);
+		background-image: url(../images/bgStripe.jpg);
+	}
+
+body {
+	background-image: url(../images/bgStripe2.jpg);
+	background-repeat: repeat-x;
+	background-color:#696969;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-#navlist li {
+#navlist li
+{
 	display: inline;
 	list-style-type: inherit;
 	padding-right: 20px;
@@ -560,29 +507,53 @@ hr {
 	top: 0px;
 	padding-top: 0px;
 }
-
-#navlist li a {
-	text-decoration: none;
-}
-
 .menuStyle {
 	font-size: small;
 	border-top: none;
 }
-
 .menu3 {
 	font-family: "Arial Black", Gadget, sans-serif; font-size: small;
 }
-
-#Table_02 {
+a:link {
+	color: #050102;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #050102;
+}
+a:hover {
+	text-decoration: none;
+	color: #E60525;
+}
+a:active {
+	text-decoration: none;
+	color: #E00523;
+	}
+	#Table_02{
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 18pt;
 }
-
 #Table_01 #copy_ {
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 16px;
 }
+#Table_01 #copy_ {
+	font-size: 16px;
+}
+#Table_01 #copy_ {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+p {
+	display: block;
+	margin: 1em 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+}
+
 
 /*
  * Media queries for responsive design
